@@ -4,17 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-import java.math.BigDecimal;
+import java.time.Instant;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Price {
-    private int idPrice;
-    private int idProduct;
-    private Date priceDate;
-    private BigDecimal unitPrice;
+    private Integer idPrice;
+    private Instant priceDate;
+    private Double unitPrice;
+    private Integer idProduct;
 }
 
 

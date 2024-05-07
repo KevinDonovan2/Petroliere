@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 
 
 @Data
@@ -12,11 +11,11 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class Station {
 
-    private int stationId;
+    private Integer stationId;
     private String stationName;
     private String address;
-    private BigDecimal evaporationRateGasoline;
-    private BigDecimal evaporationRateDiesel;
-    private BigDecimal evaporationRateKerosene;
+    private Double evaporationRateGasoline;
+    private Double evaporationRateDiesel;
+    private Double evaporationRateKerosene;
 }
 
